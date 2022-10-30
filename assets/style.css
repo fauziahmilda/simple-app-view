@@ -1,0 +1,384 @@
+/*black = #211F21
+orange = #FDA00C
+red_1 = #FF2626
+red_2 = #D34A34
+yellow = #F5CA47
+blue = #53BBEE
+*/
+*,
+:before,
+:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Nunito&family=Walter+Turncoat&display=swap');
+header{
+    display: inline;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #211F21;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #211F21;
+    flex: 1;
+    text-align: right;
+    margin-left: 60px;
+}
+
+nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding:  0;
+    position: relative;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #F5CA47;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px;
+}
+
+main {
+    width: 100%;
+    padding: 10px 10px 50px 10px;
+    overflow: auto;
+ }
+
+ .logo{
+     cursor: pointer;
+ }
+
+ .dropbtn{
+     cursor: pointer;
+     margin-left: 40px;
+ }
+
+ .jumbotron {
+    background-color: #211F21;
+    color: white;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        width: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+    .container{
+        height: auto;
+    }
+    .imgcol{
+        padding: 40px;
+        height: 300px;
+    }
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+
+.judul {
+    font-family: 'Frijole', cursive;
+    font-size: 74px;
+    color: #F5CA47;
+}
+
+.deal,
+.isi-deal,
+.judul,
+.harga{
+    text-align: center;
+}
+
+.harga{
+    margin-top: 30px;
+}
+
+.dropbtn{
+    background-color: #FDA00C;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover{
+    background-color: #FF2626;
+}
+
+.btn{
+    color: #211F21;
+    background-color: #F5CA47;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 18px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover{
+    color: #211F21;
+    background-color: #FDA00C;
+}
+
+.sec{
+    color: white;
+}
+
+.sec #menu, #order{
+    font-family: 'Frijole', cursive;
+}
+
+#menu{
+    padding-top: 5%;
+}
+
+#order{
+    padding-top: 20%;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
+ }
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    background-color: #F5CA47;
+}
+
+
+.header-profile{
+    text-align: center;
+}
+
+.tb{
+    padding: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table th td{
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .col2{
+        flex-direction: column;
+    }
+    .card{
+        margin:10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.col2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.def_c{
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.container_f{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container_f h2{
+    text-align: left;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.col_f ul{
+    list-style: none;
+}
+
+.footer {
+    width: 100%;
+    padding: 70px 0px;
+    color: white;
+    background-color: #FDA00C;
+    font-weight: bold;
+ }
+
+.row_f{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .col_f{
+     width: 25%;
+     padding: 0 15px;
+     margin-bottom: 40px;
+ }
+
+ .col_f h3{
+    font-size: 18px;
+    color: #211F21;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+    
+ }
+
+.col_f h3::before{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #FF2626;
+    height: 3px;
+    width: 50%;
+}
+
+.col_f ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.col_f ul li a{
+    display: inline-block;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.col_f ul li a:hover{
+    color: #211F21;
+    transform: translateY(10px);
+}
+
+.col_f .sosmed a{
+    display: inline-block;
+    height: 40px;
+    width:  40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0 ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.col_f .sosmed a:hover{
+    color: #211F21;
+    background-color: white;
+}
+
+/*Hiks maaf ka, ini blom kelar*/
+@media screen and (max-width: 768px){
+    body{
+    overflow-x: hidden;
+    }
+    .navbar{
+    height: 100px;
+    }
+    .nav-link{
+        position: absolute;
+        right: 0px;
+        top: 0vh;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #FDA00C;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-link a:hover{
+        color: #211F21;
+    }
+    .nav-link li{
+        opacity: 0;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+}
